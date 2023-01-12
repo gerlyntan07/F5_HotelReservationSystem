@@ -1,0 +1,166 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Homepage.master.vb" Inherits="F5_HotelReservationSystem.Homepage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilton Manila</title>
+    <link href="Homepage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <!-- Header -->
+        <section id="header">
+            <div class="header container">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#hero">
+                            <img src="pngs/logofinal.png" />
+                        </a>
+                    </div>
+                    <div class="nav-list">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#hero" data-after="Home">Home</a></li>
+                            <li><a href="#services" data-after="Service">Services</a></li>
+                            <li><a href="#location" data-after="Location">Location</a></li>
+                            <li><a href="#contact" data-after="Contact">Contact</a></li>
+                            <li><a href="Login.aspx" data-after="Sign In">Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Header -->
+        <!-- Hero Section  -->
+        <section id="hero">
+            <div class="hero-container">
+                <div>
+                    <p>The place you'd rather be</p>
+                    <br />
+                    <h1>Hilton Hotel</h1>
+                    <h1>Manila</h1>
+                    <br />
+                    <p>
+                        To fill the earth with the light and warmth of hospitality by delivering exceptional
+                        <br />
+                        experiences – every hotel, every guest, every time.
+                    </p>
+                    <asp:Button runat="server" CssClass="cta" Text="Book Now" ID="btnReserve" />
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section  -->
+
+        <!-- Service Section -->
+        <section id="services">
+            <div class="services container">
+                <div class="service-top">
+                    <h1 class="section-title">Serv<span>i</span>ces</h1>
+                </div>
+                <div class="service-bottom">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="pngs/roomservice.png" />
+                        </div>
+                        <h2>Room service</h2>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="pngs/car.png" />
+                        </div>
+                        <h2>Free Parking</h2>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="pngs/key.png" />
+                        </div>
+                        <h2>Digital lock</h2>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="pngs/pool.png" />
+                        </div>
+                        <h2>outdoor pool</h2>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="pngs/spoonfork.png" />
+                        </div>
+                        <h2>On-site restaurants</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Service Section -->
+
+        <!-- About Section -->
+        <section id="location">
+            <div class="location container">
+                <div class="col-right">
+                    <h1 class="section-title">we <span>are</span> here</h1>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2296.602922734427!2d121.01873609938535!3d14.518506156626348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cecc48df0ba5%3A0x500e23dc094e6806!2sHilton%20Manila!5e0!3m2!1sen!2sph!4v1665491112864!5m2!1sen!2sph" width="100%" height="400" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact container">
+                <div>
+                    <h1 class="section-title">Contact <span>info</span></h1>
+                </div>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/50/000000/ringing-phone.png" />
+                        </div>
+                        <div class="contact-info">
+                            <h1>Telephone</h1>
+                            <h2>+63 2 7239 7788</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-android-phone-flat-icons-inmotus-design.png" />
+                        </div>
+                        <div class="contact-info">
+                            <h1>Mobile</h1>
+                            <h2>0909-6913713</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/50/000000/gmail--v1.png" />
+                        </div>
+                        <div class="contact-info">
+                            <h1>Email</h1>
+                            <h2>mnlph_hotel@hilton.com</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="footer container">
+                <p>Copyright © 2023 Team F5. Bustero Caliwan Enriquez Tan Virtudez</p>
+            </div>
+        </section>
+        <!-- End Footer -->
+        <script src="Homepage.js"></script>
+
+    </form>
+</body>
+</html>
